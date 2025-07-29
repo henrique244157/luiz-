@@ -1,31 +1,554 @@
-<!--Declar que o DOCTYPE é um documento em HTML-->
 <!DOCTYPE html>
-<html lang="pt-BR"><!--Definir o inicio do documento HTML e especificar o idioma como
-    português do Brasil-->
-<head>  <!--Contém metadados e configurações da página-->
-<meta charset="UTF-8"><!--define a condificação do caracteres e permetindo acentos e caracteres especiais-->
-
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loja de Carros JDM</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-<meta name="viewport" content="widt=device-wid, inital-scale=1.0"
-< !--garantit que a
-pagina se adapte e seja responsiva
-o tamanho do dispositivo-->
-<title>primeira pagina web</title>
-<!--define o titulo da aba
-do navegador -->
-</head>
-<!--fechar o cabeçalho da pagina-->
 <body>
-<!--iniciar o corpo da pagina,
-onde o conteudo visivel e inserido-->
-<h1>bem vindo a minha primeira pagina</h1>
-<!--h1 até o h6 exibir o tamanho
-da fonte
-h1 é  maior nivel
-h6 é menor nivel-->
-<p>este é um, exemplo simples de uma pagina</p>
-<!--o p adiciona um paragrafo
-com uma breve descrição-->
+  <header>
+    <h1> Lux JDM </h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Catálogo</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h2>Bem-vindo à melhor loja JDM do Brasil!</h2>
+    <p>Carros importados e exclusivos do Japão.</p>
+  </section>
+
+  <main class="carros">
+    <div class="carro">
+      <img src="IMG LUIZ/nissan gtr r34.webp" alt="Nissan GT-R">
+      <h3>Nissan GT-R R34</h3>
+      <p>Preço: R$ 400.000</p>
+      <button onclick="comprar('Nissan GT-R R34')">Comprar</button>
+    </div>
+
+    <div class="carro">
+      <img src="IMG LUIZ/SUPRA.jpg" alt="Toyota Supra">
+      <h3>Toyota Supra MK4</h3>
+      <p>Preço: R$ 380.000</p>
+      <button onclick="comprar('Toyota Supra MK4')">Comprar</button>
+    </div>
+
+    <div class="carro">
+      <img src="IMG LUIZ/LANCER.jpg" alt="Mitsubishi Lancer">
+      <h3>Mitsubishi Lancer Evo</h3>
+      <p>Preço: R$ 350.000</p>
+      <button onclick="comprar('Mitsubishi Lancer Evo')">Comprar</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 JDM Motors - Todos os direitos reservados</p>
+  </footer>
+   
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo ATML Veículos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #0D47A1;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .car-item {
+            background-color: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .car-item h2 {
+            color: #0D47A1;
+            font-size: 1.5em;
+        }
+        .car-item p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .car-item ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .car-item ul li {
+            margin: 8px 0;
+        }
+        .price {
+            font-size: 1.3em;
+            color: #2E7D32;
+            font-weight: bold;
+        }
+        .highlight {
+            background-color: #ffcc00;
+            padding: 10px;
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #0D47A1;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .contact-info {
+            margin-top: 10px;
+        }
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Catálogo de Carros - ATML Veículos</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="highlight">
+            <h2>Ofertas Especiais!</h2>
+            <p>Desconto de 5% à vista em qualquer modelo. Financiamento facilitado com taxas a partir de 0,89% ao mês.</p>
+        </div>
+
+        <div class="car-item">
+            <h2>Toyota Corolla 2023</h2>
+            <p><strong>Preço:</strong> <span class="price">R$ 124.900,00</span></p>
+            <ul>
+                <li><strong>Cor:</strong> Branco Pérola</li>
+                <li><strong>Motor:</strong> 2.0 Flex</li>
+                <li><strong>Potência:</strong> 169 cv</li>
+                <li><strong>Consumo:</strong> 12,4 km/l (cidade), 15,8 km/l (estrada)</li>
+                <li><strong>Equipamentos:</strong> Ar condicionado, direção elétrica, câmbio automático CVT, sistema multimídia, câmera de ré, controle de tração e estabilidade.</li>
+                <li><strong>Garantia:</strong> 5 anos</li>
+            </ul>
+            <p><strong>Observações:</strong> Excelente para quem busca conforto e economia.</p>
+        </div>
+
+        <div class="car-item">
+            <h2>Honda HR-V EXL 2023</h2>
+            <p><strong>Preço:</strong> <span class="price">R$ 139.990,00</span></p>
+            <ul>
+                <li><strong>Cor:</strong> Cinza Moderno</li>
+                <li><strong>Motor:</strong> 1.8 Flex</li>
+                <li><strong>Potência:</strong> 139 cv</li>
+                <li><strong>Consumo:</strong> 11,8 km/l (cidade), 14,4 km/l (estrada)</li>
+                <li><strong>Equipamentos:</strong> Bancos em couro, faróis de LED, rodas aro 17, sistema de som premium, assistente de colisão, câmbio CVT, ar digital.</li>
+                <li><strong>Garantia:</strong> 5 anos</li>
+            </ul>
+            <p><strong>Observações:</strong> Ideal para famílias que buscam espaço e segurança.</p>
+        </div>
+
+        <div class="car-item">
+            <h2>Ford Ranger XLT 2023</h2>
+            <p><strong>Preço:</strong> <span class="price">R$ 179.990,00</span></p>
+            <ul>
+                <li><strong>Cor:</strong> Preto Ebony</li>
+                <li><strong>Motor:</strong> 3.2 Diesel</li>
+                <li><strong>Potência:</strong> 200 cv</li>
+                <li><strong>Consumo:</strong> 9,3 km/l (cidade), 12,5 km/l (estrada)</li>
+                <li><strong>Equipamentos:</strong> Banco de couro, tração 4x4, câmera de ré, volante multifuncional, sistema de monitoramento de ponto cego, ar condicionado automático.</li>
+                <li><strong>Garantia:</strong> 3 anos</li>
+            </ul>
+            <p><strong>Observações:</strong> Desempenho imbatível para quem precisa de força e capacidade de carga.</p>
+        </div>
+
+        <div class="car-item">
+            <h2>BMW X5 xDrive40i 2023</h2>
+            <p><strong>Preço:</strong> <span class="price">R$ 499.000,00</span></p>
+            <ul>
+                <li><strong>Cor:</strong> Azul Mediterrâneo</li>
+                <li><strong>Motor:</strong> 3.0 Turbo</li>
+                <li><strong>Potência:</strong> 340 cv</li>
+                <li><strong>Consumo:</strong> 8,2 km/l (cidade), 12,6 km/l (estrada)</li>
+                <li><strong>Equipamentos:</strong> Teto panorâmico, assistente de estacionamento, suspensão pneumática, sistema de som Harman Kardon, bancos com ventilação e massagem.</li>
+                <li><strong>Garantia:</strong> 5 anos</li>
+            </ul>
+            <p><strong>Observações:</strong> Perfeito para quem não abre mão de luxo e desempenho.</p>
+        </div>
+
+        <div class="car-item">
+            <h2>Nissan Leaf 2023</h2>
+            <p><strong>Preço:</strong> <span class="price">R$ 219.900,00</span></p>
+            <ul>
+                <li><strong>Cor:</strong> Branco</li>
+                <li><strong>Motor:</strong> Elétrico</li>
+                <li><strong>Potência:</strong> 147 cv</li>
+                <li><strong>Autonomia:</strong> 300 km (totalmente carregado)</li>
+                <li><strong>Equipamentos:</strong> Carregamento rápido, câmbio automático, câmera de ré, piloto automático, controle de tração.</li>
+                <li><strong>Garantia:</strong> 8 anos</li>
+            </ul>
+            <p><strong>Observações:</strong> Ideal para quem busca sustentabilidade e baixo custo de manutenção.</p>
+        </div>
+
+        <footer>
+            <p>ATML Veículos - Rua Exemplo, 123, Centro - São Paulo, SP</p>
+            <p class="contact-info">Telefone: (11) 1234-5678 | WhatsApp: (11) 98765-4321 | <a href="http://www.atmlveiculos.com.br">www.atmlveiculos.com.br</a></p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+        <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo ATML Veículos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #0D47A1;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .car-item {
+            background-color: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .car-item h2 {
+            color: #0D47A1;
+            font-size: 1.5em;
+        }
+        .car-item p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .car-item ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .car-item ul li {
+            margin: 8px 0;
+        }
+        .price {
+            font-size: 1.3em;
+            color: #2E7D32;
+            font-weight: bold;
+        }
+        .highlight {
+            background-color: #ffcc00;
+            padding: 10px;
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #0D47A1;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .contact-info {
+            margin-top: 10px;
+        }
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Catálogo de Carros - ATML Veículos</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="highlight">
+            <h2>Ofertas Especiais!</h2>
+            <p>Desconto de 5% à vista em qualquer modelo. Financiamento facilitado com taxas a partir de 0,89% ao mês.</p>
+        </div>
+
+        <div class="car-item">
+            <h2>Toyota Corolla 2023</h2>
+            <p><strong>Preço:</strong> <span class="price">R$ 124.900,00</span></p>
+            <ul>
+                <li><strong>Cor:</strong> Branco Pérola</li>
+                <li><strong>Motor:</strong> 2.0 Flex</li>
+                <li><strong>Potência:</strong> 169 cv</li>
+                <li><strong>Consumo:</strong> 12,4 km/l (cidade), 15,8 km/l (estrada)</li>
+                <li><strong>Equipamentos:</strong> Ar condicionado, direção elétrica, câmbio automático CVT, sistema multimídia, câmera de ré, controle de tração e estabilidade.</li>
+                <li><strong>Garantia:</strong> 5 anos</li>
+            </ul>
+            <p><strong>Observações:</strong> Excelente para quem busca conforto e economia.</p>
+        </div>
+
+        <div class="car-item">
+            <h2>Honda HR-V EXL 2023</h2>
+            <p><strong>Preço:</strong> <span class="price">R$ 139.990,00</span></p>
+            <ul>
+                <li><strong>Cor:</strong> Cinza Moderno</li>
+                <li><strong>Motor:</strong> 1.8 Flex</li>
+                <li><strong>Potência:</strong> 139 cv</li>
+                <li><strong>Consumo:</strong> 11,8 km/l (cidade), 14,4 km/l (estrada)</li>
+                <li><strong>Equipamentos:</strong> Bancos em couro, faróis de LED, rodas aro 17, sistema de som premium, assistente de colisão, câmbio CVT, ar digital.</li>
+                <li><strong>Garantia:</strong> 5 anos</li>
+            </ul>
+            <p><strong>Observações:</strong> Ideal para famílias que buscam espaço e segurança.</p>
+        </div>
+
+        <div class="car-item">
+            <h2>Ford Ranger XLT 2023</h2>
+            <p><strong>Preço:</strong> <span class="price">R$ 179.990,00</span></p>
+            <ul>
+                <li><strong>Cor:</strong> Preto Ebony</li>
+                <li><strong>Motor:</strong> 3.2 Diesel</li>
+                <li><strong>Potência:</strong> 200 cv</li>
+                <li><strong>Consumo:</strong> 9,3 km/l (cidade), 12,5 km/l (estrada)</li>
+                <li><strong>Equipamentos:</strong> Banco de couro, tração 4x4, câmera de ré, volante multifuncional, sistema de monitoramento de ponto cego, ar condicionado automático.</li>
+                <li><strong>Garantia:</strong> 3 anos</li>
+            </ul>
+            <p><strong>Observações:</strong> Desempenho imbatível para quem precisa de força e capacidade de carga.</p>
+        </div>
+
+        <div class="car-item">
+            <h2>BMW X5 xDrive40i 2023</h2>
+            <p><strong>Preço:</strong> <span class="price">R$ 499.000,00</span></p>
+            <ul>
+                <li><strong>Cor:</strong> Azul Mediterrâneo</li>
+                <li><strong>Motor:</strong> 3.0 Turbo</li>
+                <li><strong>Potência:</strong> 340 cv</li>
+                <li><strong>Consumo:</strong> 8,2 km/l (cidade), 12,6 km/l (estrada)</li>
+                <li><strong>Equipamentos:</strong> Teto panorâmico, assistente de estacionamento, suspensão pneumática, sistema de som Harman Kardon, bancos com ventilação e massagem.</li>
+                <li><strong>Garantia:</strong> 5 anos</li>
+            </ul>
+            <p><strong>Observações:</strong> Perfeito para quem não abre mão de luxo e desempenho.</p>
+        </div>
+
+        <div class="car-item">
+            <h2>Nissan Leaf 2023</h2>
+            <p><strong>Preço:</strong> <span class="price">R$ 219.900,00</span></p>
+            <ul>
+                <li><strong>Cor:</strong> Branco</li>
+                <li><strong>Motor:</strong> Elétrico</li>
+                <li><strong>Potência:</strong> 147 cv</li>
+                <li><strong>Autonomia:</strong> 300 km (totalmente carregado)</li>
+                <li><strong>Equipamentos:</strong> Carregamento rápido, câmbio automático, câmera de ré, piloto automático, controle de tração.</li>
+                <li><strong>Garantia:</strong> 8 anos</li>
+            </ul>
+            <p><strong>Observações:</strong> Ideal para quem busca sustentabilidade e baixo custo de manutenção.</p>
+        </div>
+
+        <footer>
+            <p>ATML Veículos - Rua Exemplo, 123, Centro - São Paulo, SP</p>
+            <p class="contact-info">Telefone: (11) 1234-5678 | WhatsApp: (11) 98765-4321 | <a href="http://www.atmlveiculos.com.br">www.atmlveiculos.com.br</a></p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+ 
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo ATML Veículos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #0D47A1;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .car-item {
+            background-color: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .car-item h2 {
+            color: #0D47A1;
+            font-size: 1.5em;
+        }
+        .car-item p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .car-item ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .car-item ul li {
+            margin: 8px 0;
+        }
+        .price {
+            font-size: 1.3em;
+            color: #2E7D32;
+            font-weight: bold;
+        }
+        .highlight {
+            background-color: #ffcc00;
+            padding: 10px;
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #0D47A1;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .contact-info {
+            margin-top: 10px;
+        }
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Catálogo de Carros - ATML Veículos</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="highlight">
+            <h2>Ofertas Especiais!</h2>
+            <p>Desconto de 5% à vista em qualquer modelo. Financiamento facilitado com taxas a partir de 0,89% ao mês.</p>
+        </div>
+
+        <div class="car-item">
+            <h2>Toyota Corolla 2023</h2>
+            <p><strong>Preço:</strong> <span class="price">R$ 124.900,00</span></p>
+            <ul>
+                <li><strong>Cor:</strong> Branco Pérola</li>
+                <li><strong>Motor:</strong> 2.0 Flex</li>
+                <li><strong>Potência:</strong> 169 cv</li>
+                <li><strong>Consumo:</strong> 12,4 km/l (cidade), 15,8 km/l (estrada)</li>
+                <li><strong>Equipamentos:</strong> Ar condicionado, direção elétrica, câmbio automático CVT, sistema multimídia, câmera de ré, controle de tração e estabilidade.</li>
+                <li><strong>Garantia:</strong> 5 anos</li>
+            </ul>
+            <p><strong>Observações:</strong> Excelente para quem busca conforto e economia.</p>
+        </div>
+
+        <div class="car-item">
+            <h2>Honda HR-V EXL 2023</h2>
+            <p><strong>Preço:</strong> <span class="price">R$ 139.990,00</span></p>
+            <ul>
+                <li><strong>Cor:</strong> Cinza Moderno</li>
+                <li><strong>Motor:</strong> 1.8 Flex</li>
+                <li><strong>Potência:</strong> 139 cv</li>
+                <li><strong>Consumo:</strong> 11,8 km/l (cidade), 14,4 km/l (estrada)</li>
+                <li><strong>Equipamentos:</strong> Bancos em couro, faróis de LED, rodas aro 17, sistema de som premium, assistente de colisão, câmbio CVT, ar digital.</li>
+                <li><strong>Garantia:</strong> 5 anos</li>
+            </ul>
+            <p><strong>Observações:</strong> Ideal para famílias que buscam espaço e segurança.</p>
+        </div>
+
+        <div class="car-item">
+            <h2>Ford Ranger XLT 2023</h2>
+            <p><strong>Preço:</strong> <span class="price">R$ 179.990,00</span></p>
+            <ul>
+                <li><strong>Cor:</strong> Preto Ebony</li>
+                <li><strong>Motor:</strong> 3.2 Diesel</li>
+                <li><strong>Potência:</strong> 200 cv</li>
+                <li><strong>Consumo:</strong> 9,3 km/l (cidade), 12,5 km/l (estrada)</li>
+                <li><strong>Equipamentos:</strong> Banco de couro, tração 4x4, câmera de ré, volante multifuncional, sistema de monitoramento de ponto cego, ar condicionado automático.</li>
+                <li><strong>Garantia:</strong> 3 anos</li>
+            </ul>
+            <p><strong>Observações:</strong> Desempenho imbatível para quem precisa de força e capacidade de carga.</p>
+        </div>
+
+        <div class="car-item">
+            <h2>BMW X5 xDrive40i 2023</h2>
+            <p><strong>Preço:</strong> <span class="price">R$ 499.000,00</span></p>
+            <ul>
+                <li><strong>Cor:</strong> Azul Mediterrâneo</li>
+                <li><strong>Motor:</strong> 3.0 Turbo</li>
+                <li><strong>Potência:</strong> 340 cv</li>
+                <li><strong>Consumo:</strong> 8,2 km/l (cidade), 12,6 km/l (estrada)</li>
+                <li><strong>Equipamentos:</strong> Teto panorâmico, assistente de estacionamento, suspensão pneumática, sistema de som Harman Kardon, bancos com ventilação e massagem.</li>
+                <li><strong>Garantia:</strong> 5 anos</li>
+            </ul>
+            <p><strong>Observações:</strong> Perfeito para quem não abre mão de luxo e desempenho.</p>
+        </div>
+
+        <div class="car-item">
+            <h2>Nissan Leaf 2023</h2>
+            <p><strong>Preço:</strong> <span class="price">R$ 219.900,00</span></p>
+            <ul>
+                <li><strong>Cor:</strong> Branco</li>
+                <li><strong>Motor:</strong> Elétrico</li>
+                <li><strong>Potência:</strong> 147 cv</li>
+                <li><strong>Autonomia:</strong> 300 km (totalmente carregado)</li>
+                <li><strong>Equipamentos:</strong> Carregamento rápido, câmbio automático, câmera de ré, piloto automático, controle de tração.</li>
+                <li><strong>Garantia:</strong> 8 anos</li>
+            </ul>
+            <p><strong>Observações:</strong> Ideal para quem busca sustentabilidade e baixo custo de manutenção.</p>
+        </div>
+
+        <footer>
+            <p>ATML Veículos - Rua Exemplo, 123, Centro - São Paulo, SP</p>
+            <p class="contact-info">Telefone: (11) 1234-5678 | WhatsApp: (11) 98765-4321 | <a href="http://www.atmlveiculos.com.br">www.atmlveiculos.com.br</a></p>
+        </footer>
+
+    </div>
+
 </body>
 </html>
